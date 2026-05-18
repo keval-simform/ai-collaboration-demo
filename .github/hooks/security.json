@@ -1,0 +1,11 @@
+{
+  "version": 1,
+  "hooks": {
+    "preToolUse": {
+      "command": "echo \"[$(date)] Tool Executed\" >> .github/hooks/tool-usage.log"
+    },
+    "sessionStart": {
+      "command": "echo \"[$(date)] Copilot Agent Session Started\" >> .github/hooks/session.log"
+    }
+  }
+}
